@@ -1,0 +1,29 @@
+bit manipulation is basically doing bitwise operations on a number
+for example
+
+get bit
+for getting the ith bit of a number n
+create a bit mask : 1<<i where << is left shift operator
+then perform AND operation on them
+for eg, getting the 3rd bit (pos 2) of a number n (n=0101)
+create a bit mask 1<<2
+0001<<2
+0100
+0100 AND 0101
+0100
+
+Set bit
+Bit mask 1<<i
+operation OR
+
+clear bit
+bit mask 1<<i
+operation : AND with not
+n&(~bitMask)
+
+update bit
+operation=what bit to change it to
+if want to update it to zero,
+use clear bit
+if want to update it to 1,
+use set bit
